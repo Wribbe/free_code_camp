@@ -1,0 +1,29 @@
+:root {
+  --color01: hsl(90, 50%, 50%);
+  --color02: hsl(270, 50%, 50%);
+  --color03: hsl(110, 50%, 50%);
+  --color04: hsl(300, 50%, 50%);
+  --width-logo: 10.4vw;
+  --height-logo: 10.4vw;
+}
+
+.svg_logo {
+  width: var(--width-logo);
+  height: var(--height-logo);
+}
+
+.svg_logo circle {
+  fill: var(--color01);
+}
+
+.svg_logo text {
+  transform: translate(calc(0.5*var(--width-logo)), calc(0.5*var(--height-logo)));
+  text-anchor: middle;
+  dominant-baseline: middle;
+  font-size: calc(var(--height-logo)/3.2);
+  fill: var(--color02);
+}
+
+#header {
+  background-color: var(--color03);
+}
